@@ -1,0 +1,28 @@
+body {
+  background-image: url('ANTARCTICA.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 50px 0 0 0;
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: normal;
+  font-size: 48px;
+  width: 40%;
+  padding: 30px;
+  margin: 0;
+}
+
+.transparent-title {
+  background-color: #ffffff;
+  color: #000000;
+  opacity: 0.5;
+}
+
+.another-title {
+  background-color: #660066;
+  color: #000000;
+}

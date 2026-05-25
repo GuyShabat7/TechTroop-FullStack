@@ -1,0 +1,26 @@
+body {
+    background-color: #ffffff;
+    padding: 40px;
+}
+
+.first_line {
+    font-family: "Arial Black", Arial, sans-serif;
+    color: #fce4c8;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.second_line {
+    font-family: Arial, sans-serif;
+    color: #ff007f;
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.third_line {
+    font-family: Impact, fantasy;
+    color: #6998d8;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
