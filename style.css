@@ -1,0 +1,20 @@
+h1 {
+    text-align:center;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 150px;
+}
+
+.left-section {
+    width: calc(100% - 20px);
+    background-color: #ffb6c1;
+}
+
+.right-section {
+    width: 20px;
+    background-color: #f08080;
+}
