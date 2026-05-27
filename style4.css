@@ -1,0 +1,41 @@
+#container {
+    background-color: #b3b3b3;
+    width: 180px;
+    padding: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: 50px 50px;
+    gap: 5px;
+}
+
+.box {
+    height: 50px;
+    border: 1px solid black;  
+}
+
+#first {
+    background-color: #1abc9c;
+    grid-column: 1 ;
+}
+
+#second {
+  background-color: #e67e22;
+  grid-column: 2;
+}
+
+.prompt, input, .button {
+  grid-column: 1 / -1;
+}
+
+.prompt {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.button {
+  background-color: #2ecc71;
+  border: 1px solid black;
+  cursor: pointer;
+  margin-top: 10px;
+}
