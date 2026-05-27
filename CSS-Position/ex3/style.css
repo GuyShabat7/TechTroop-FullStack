@@ -1,0 +1,60 @@
+.chart-container {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  background-color: #6a5acd;
+  border-radius: 8px;
+  margin: 50px auto;
+  font-family: sans-serif;
+}
+
+.label-money {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  font-weight: bold;
+}
+
+.label-time {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  font-weight: bold;
+}
+
+.bar {
+  position: absolute;
+  bottom: 0;
+  width: 35px;
+  background-color: #b0bec5;
+}
+
+.bar:nth-child(3) {
+  left: 15px;
+  height: 15%;
+}
+
+.bar:nth-child(4) {
+  left: 65px;
+  height: 50%;
+}
+
+.bar:nth-child(5) {
+  left: 115px;
+  height: 80%;
+}
+
+.bar:nth-child(6) {
+  left: 165px;
+  height: 70%;
+}
+
+.bar:nth-child(7) {
+  left: 215px;
+  height: 55%;
+}
+
+.bar:nth-child(8) {
+  left: 265px;
+  height: 35%;
+}

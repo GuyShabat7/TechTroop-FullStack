@@ -1,0 +1,39 @@
+.image-container {
+  position: relative;
+  width: 50%;
+  margin: auto;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.corner-text {
+  position: absolute;
+  font-weight: bold;
+  font-family: serif;
+  padding: 10px;
+  color: black;
+}
+
+.corner-text:nth-child(2) {
+  top: 0;
+  left: 0;
+}
+
+.corner-text:nth-child(3) {
+  top: 0;
+  right: 0;
+}
+
+.corner-text:nth-child(4) {
+  bottom: 0;
+  left: 0;
+}
+
+.corner-text:nth-child(5) {
+  bottom: 0;
+  right: 0;
+}
