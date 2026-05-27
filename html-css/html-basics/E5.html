@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style5.css">
+    <title>Guy Shabat - Portfolio</title>
+</head>
+<body>
+    <h1>Contact Us</h1>
+
+    <form action = "#" method="POST">
+
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+        <br></br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+        <br></br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required>
+        <br></br>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Message Details</legend>
+
+        <label for="subject">Subject:</label>
+        <select id="subject" name="subject" reruired>
+            <option value="" disabled selected>Selected subject</option>
+            <option value="support">Support</option>
+            <option value="subscribe">New Subscribe</option>
+        </select>
+        <br></br>
+
+        <label>Priority:</label><br>
+        <input type="radio" id="low" name="priority" value="low">
+        <label for="low">Low</label>
+        <input type="radio" id="medium" name="priority" value="medium">
+        <label for="medium">Medium</label>    
+        <input type="radio" id="high" name="priority" value="high">
+        <label for="high">High</label><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="45" placeholder="Your message..." required></textarea><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Preferences</legend>
+
+        <input type="checkbox" id="newsletter" name="newsletter">
+        <label for="newsletter">Subscribe to newsletter</label><br></br>
+
+        <label for="contact-method">Contact Method:</label>
+            <select id="contact-method" name="contact-method">
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+            </select><br><br>
+    </fieldset>
+    <br>
+    <button type="submit">Send Message</button>
+        <button type="reset">Reset</button>
+
+    </form>
+</body>
+</html>
