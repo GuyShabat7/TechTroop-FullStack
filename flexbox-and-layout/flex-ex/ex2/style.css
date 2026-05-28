@@ -1,0 +1,32 @@
+body {
+  font-family: serif;
+}
+
+.flex-container {
+  display: flex;
+  gap: 5px;
+  border: 2px solid #d3d3d3;
+  padding: 5px;
+  max-width: 500px;
+  margin-bottom: 40px;
+}
+
+.box {
+  background-color: #6495ed;
+  font-size: 22px;
+  padding: 5px;
+  height: 80px;
+}
+
+.even-boxes .box {
+  flex-grow: 1;
+}
+
+.uneven-boxes .item1 {
+  flex-grow: 1;
+}
+
+.uneven-boxes .item2,
+.uneven-boxes .item3 {
+  flex-grow: 2;
+}
