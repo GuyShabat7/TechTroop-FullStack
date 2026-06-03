@@ -1,0 +1,1 @@
+const commentOnWeather = temp => "It's " + determineWeather(temp);
