@@ -1,4 +1,8 @@
 function validate(arr) {
+    if (!arr || !Array.isArray(arr)) {
+        return { error: "Need at least one boolean" };
+    }
+    
     const booleansOnly = arr.filter(item => typeof item === 'boolean');
 
     if (booleansOnly.length === 0) {
