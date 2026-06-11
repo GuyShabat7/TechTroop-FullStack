@@ -11,4 +11,14 @@ describe('removeAtLeastOne in ex2', () => {
     expect(result.length).toBeGreaterThan(0);
     expect(result).toBe(arr);
   });
+
+  test('should handle invalid inputs, empty arrays, or missing parameters safely', () => {
+    expect(() => removeAtLeastOne()).toThrow();
+    
+    expect(() => removeAtLeastOne("not an array")).toThrow();
+    expect(() => removeAtLeastOne(123)).toThrow();
+
+    const emptyArr = [];
+    expect(removeAtLeastOne(emptyArr)).toEqual([]);
+  });
 });

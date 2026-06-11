@@ -21,4 +21,16 @@ describe('validate', () => {
     expect(validate([true, false])).toBe(false);
     expect(validate([true, true, false, false])).toBe(false);
   });
+
+  test('should return the error object if the parameter is missing, null, or not an array', () => {
+    const expectedError = { error: "Need at least one boolean" };
+    
+    expect(validate()).toEqual(expectedError);
+    
+    expect(validate(null)).toEqual(expectedError);
+    
+    expect(validate("true")).toEqual(expectedError);
+    
+    expect(validate({ value: true })).toEqual(expectedError);
+  });
 });

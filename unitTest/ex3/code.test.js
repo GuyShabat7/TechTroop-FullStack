@@ -2,7 +2,7 @@
 const { simplify } = require('./code');
 
 describe('simplify', () => {
-  it('should remove all specified symbols (!, #, ., ,, \') from the string', () => {
+  test('should remove all specified symbols (!, #, ., ,, \') from the string', () => {
     
     expect(simplify("Hello, world!")).toBe("Hello world");
     
@@ -13,5 +13,15 @@ describe('simplify', () => {
     expect(simplify("It's #1. Period.")).toBe("Its 1 Period");
     
     expect(simplify("")).toBe("");
+  });
+
+  test('should throw an error or handle invalid data types safely', () => {
+    expect(() => simplify(null)).toThrow();
+    expect(() => simplify(undefined)).toThrow();
+    expect(() => simplify()).toThrow();
+    
+    expect(() => simplify(12345)).toThrow();
+    
+    expect(() => simplify({ text: "Hello" })).toThrow();
   });
 });
