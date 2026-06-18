@@ -61,5 +61,3 @@ class AutoCompleteTrie {
         return allWords.sort((a, b) => b.frequency - a.frequency);
     }
 }
-
-module.exports = AutoCompleteTrie;

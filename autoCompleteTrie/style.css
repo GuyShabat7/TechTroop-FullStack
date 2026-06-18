@@ -1,0 +1,123 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 40px;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.container {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-row {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 12px 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #6b81ea;
+}
+
+button {
+    background-color: #6b81ea;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #556cd6;
+}
+
+#messageBox {
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.message-success {
+    background-color: #d1f2d6;
+    color: #1b5e20;
+    border: 1px solid #a5d6a7;
+}
+
+.message-error {
+    background-color: #fce4e4;
+    color: #c62828;
+    border: 1px solid #ef9a9a;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-container input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#suggestionsBox {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    margin-top: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 10;
+    overflow: hidden;
+}
+
+.suggestion-item {
+    padding: 12px 15px;
+    border-bottom: 1px solid #f3f4f6;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.suggestion-item:last-child {
+    border-bottom: none;
+}
+
+.suggestion-item:hover {
+    background-color: #f9fafb;
+}
+
+.highlight {
+    background-color: #fce4e4;
+    font-weight: bold;
+    color: #333;
+}
+
+.stats-box {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+#wordCount {
+    font-size: 42px;
+    font-weight: bold;
+    color: #6b81ea;
+    margin-bottom: 5px;
+}

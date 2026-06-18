@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoComplete Trie Web UI</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="autoComplete.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="input-row">
+            <input type="text" id="addWordInput" placeholder="Enter a word to add to dictionary">
+            <button id="addWordBtn">Add Word</button>
+        </div>
+
+        <div id="messageBox" style="display: none;"></div>
+
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Start typing to see suggestions...">
+            <div id="suggestionsBox" style="display: none;"></div>
+        </div>
+
+        <div class="stats-box">
+            <div id="wordCount">0</div>
+            <div>Words in Dictionary</div>
+        </div>
+
+    </div>
+
+</body>
+</html>
