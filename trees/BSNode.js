@@ -5,7 +5,7 @@ class BSNode {
         this.rightChild;
     }
 
-    insertNode(newVal) {
+     theinsertNode(newVal) {
         if (!this.value) {
             this.value = newVal
         }
