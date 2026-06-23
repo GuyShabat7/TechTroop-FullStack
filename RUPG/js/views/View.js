@@ -11,6 +11,7 @@ class View {
     this.errorBanner = document.getElementById('error-banner');
     this.errorMessage = document.getElementById('error-message');
     this.generateBtn = document.getElementById('generate-btn');
+    this.dropdown = document.getElementById('saved-users-dropdown');
   }
 
   renderMainUser(user) {
@@ -58,5 +59,19 @@ class View {
 
   hideError() {
     this.errorBanner.classList.add('hidden');
+  }
+
+  renderDropdown(names) {
+    this.dropdown.innerHTML = '<option value="">-- Select Saved User --</option>';
+    names.forEach(name => {
+      const option = document.createElement('option');
+      option.value = name;
+      option.textContent = name;
+      this.dropdown.appendChild(option);
+    });
+  }
+
+  getSelectedUser() {
+    return this.dropdown.value;
   }
 }
