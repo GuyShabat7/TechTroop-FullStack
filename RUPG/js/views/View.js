@@ -32,7 +32,10 @@ class View {
   }
 
   renderPokemon(pokemon) {
-    const name = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
+    const name = pokemon.name
+      .split('-')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join('-');
     this.pokemonImg.src = pokemon.image;
     this.pokemonImg.alt = name;
     this.pokemonName.textContent = name;
