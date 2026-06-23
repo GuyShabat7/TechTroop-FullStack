@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random User Page Generator</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <div class="page-wrapper">
+
+      <!-- ── HEADER / MAIN USER ── -->
+      <header class="profile-header">
+        <div class="cover-photo"></div>
+
+        <div class="profile-info">
+          <img
+            id="main-avatar"
+            class="avatar"
+            src=""
+            alt="Profile picture"
+          />
+          <div class="profile-details">
+            <h1 id="main-name">Full Name</h1>
+            <p id="main-location">City, State</p>
+          </div>
+        </div>
+      </header>
+
+      <!-- ── MAIN CONTENT GRID ── -->
+      <main class="content-grid">
+
+        <!-- LEFT COLUMN -->
+        <aside class="left-column">
+
+          <!-- Pokemon Card -->
+          <section class="card pokemon-card">
+            <h2 class="card-title">My Pokemon</h2>
+            <img id="pokemon-img" src="" alt="Pokemon" />
+            <p id="pokemon-name">???</p>
+          </section>
+
+          <!-- Friends Section -->
+          <section class="card friends-card">
+            <h2 class="card-title">Friends</h2>
+            <ul id="friends-list">
+              <!-- 6 friends injected here -->
+            </ul>
+          </section>
+
+        </aside>
+
+        <!-- RIGHT COLUMN -->
+        <section class="right-column">
+
+          <!-- Kanye Quote -->
+          <div class="card quote-card">
+            <h2 class="card-title">Quote of the Day</h2>
+            <blockquote id="kanye-quote">"..."</blockquote>
+            <cite>— Kanye West</cite>
+          </div>
+
+          <!-- About Me -->
+          <div class="card about-card">
+            <h2 class="card-title">About Me</h2>
+            <p id="about-text">Loading...</p>
+          </div>
+
+        </section>
+
+      </main>
+
+      <!-- ── ACTIONS ── -->
+      <div class="actions-bar">
+        <button id="generate-btn" class="btn btn-primary">Generate New User</button>
+        <button id="save-btn" class="btn btn-secondary">Save User Page</button>
+        <div class="load-group">
+          <select id="saved-users-dropdown">
+            <option value="">-- Select Saved User --</option>
+          </select>
+          <button id="load-btn" class="btn btn-secondary">Load User Page</button>
+        </div>
+      </div>
+
+      <!-- ── ERROR BANNER ── -->
+      <div id="error-banner" class="error-banner hidden">
+        <p id="error-message">Something went wrong. Please try again.</p>
+        <button id="error-close" class="error-close">&times;</button>
+      </div>
+
+    </div><!-- /page-wrapper -->
+
+    <script src="js/models/UserModel.js"></script>
+    <script src="js/models/QuoteModel.js"></script>
+    <script src="js/models/PokemonModel.js"></script>
+    <script src="js/models/AboutModel.js"></script>
+    <script src="js/views/View.js"></script>
+    <script src="js/controllers/Controller.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

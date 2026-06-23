@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wisdom Board</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 30px; }
+        input { padding: 8px; width: 300px; }
+        button { padding: 8px 16px; margin-left: 8px; cursor: pointer; }
+        #clear-btn { background-color: red; color: white; border: none; }
+        .wisdom-item { margin: 8px 0; }
+        .wisdom-item span { margin-left: 8px; color: red; cursor: pointer; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h2>Wisdom Board</h2>
+    <input type="text" id="wisdom-input" placeholder="Enter your wisdom..." />
+    <button id="submit-btn">Submit</button>
+    <button id="clear-btn">Clear Wisdom</button>
+    <div id="wisdom-list"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
