@@ -1,0 +1,237 @@
+/* ── BASE ── */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e9ebee;
+  color: #1c1e21;
+}
+
+/* PAGE WRAPPER */
+.page-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+/* PROFILE */
+.profile-header {
+  background: #fff;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 16px;
+}
+
+.cover-photo {
+  height: 220px;
+  background: linear-gradient(135deg, #1877f2, #42b72a);
+  border-radius: 0 0 0 0;
+}
+
+.profile-info {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  padding: 0 24px 16px;
+  position: relative;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  object-fit: cover;
+  margin-top: -50px;
+  background-color: #ccc;
+}
+
+.profile-details {
+  padding-bottom: 8px;
+}
+
+.profile-details h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.profile-details p {
+  font-size: 0.95rem;
+  color: #65676b;
+}
+
+/* CONTENT */
+.content-grid {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 16px;
+  padding: 0 16px;
+}
+
+/* CARDS */
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #e4e6eb;
+  padding-bottom: 8px;
+}
+
+/* POKEMON CARD */
+.pokemon-card {
+  text-align: center;
+}
+
+.pokemon-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.pokemon-card p {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #1877f2;
+  margin-top: 8px;
+}
+
+/* FRIENDS CARD */
+.friends-card ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.friends-card li {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1c1e21;
+  background: #f0f2f5;
+  border-radius: 6px;
+  padding: 6px 8px;
+  text-align: center;
+}
+
+/* QUOTE CARD */
+.quote-card blockquote {
+  font-size: 1rem;
+  font-style: italic;
+  color: #444;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.quote-card cite {
+  font-size: 0.85rem;
+  color: #65676b;
+  font-weight: 600;
+}
+
+/* ABOUT CARD */
+.about-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* ACTIONS BAR */
+.actions-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.btn-primary {
+  background-color: #1877f2;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #e4e6eb;
+  color: #1c1e21;
+}
+
+.load-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#saved-users-dropdown {
+  padding: 9px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+/* ERROR BANNER */
+.error-banner {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fa3e3e;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 100;
+}
+
+.error-banner.hidden {
+  display: none;
+}
+
+.error-close {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  line-height: 1;
+}
+
+/* RESPONSIVE */
+@media (max-width: 680px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-details h1 {
+    font-size: 1.3rem;
+  }
+
+  .avatar {
+    width: 90px;
+    height: 90px;
+  }
+}
